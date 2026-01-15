@@ -1,0 +1,33 @@
+openapi: 3.0.1
+info:
+  title: Service
+  version: 1.0.0
+paths:
+  /hello-banana:
+    get:
+      tags: []
+      summary: oi
+      description: Manda um oi ao usuário e o mostra links úteis
+      operationId: hello
+      security:
+        - { }
+        - basicAuth: [ ]
+      responses:
+        "200":
+          description: Movimento incluido com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Hello"
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: "basic"
+
+  schemas:
+    Hello:
+      type: object
+      properties:
+        mensagem:
+          type: string
