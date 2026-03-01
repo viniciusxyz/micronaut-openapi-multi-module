@@ -19,6 +19,6 @@
         <micronaut.openapi.model.package.name>microservice.b.example.model</micronaut.openapi.model.package.name>
         <micronaut.openapi.invoker.package.name>microservice.b.example</micronaut.openapi.invoker.package.name>
         <micronaut.openapi.use.reactive>false</micronaut.openapi.use.reactive>
-        <micronaut.openapi.server.use.auth>false</micronaut.openapi.server.use.auth>
+        <micronaut.openapi.server.use.auth>true</micronaut.openapi.server.use.auth>
     </properties>
 </project>
